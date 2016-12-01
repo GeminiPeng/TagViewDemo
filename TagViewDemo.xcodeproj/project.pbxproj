@@ -15,6 +15,7 @@
 		B49C767D1DEFEA84008B353B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B49C767B1DEFEA84008B353B /* LaunchScreen.storyboard */; };
 		B49C76881DEFEA85008B353B /* TagViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B49C76871DEFEA85008B353B /* TagViewDemoTests.m */; };
 		B49C76931DEFEA85008B353B /* TagViewDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B49C76921DEFEA85008B353B /* TagViewDemoUITests.m */; };
+		B49C76A21DEFF2C0008B353B /* TagCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B49C76A11DEFF2C0008B353B /* TagCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		B49C768E1DEFEA85008B353B /* TagViewDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TagViewDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B49C76921DEFEA85008B353B /* TagViewDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TagViewDemoUITests.m; sourceTree = "<group>"; };
 		B49C76941DEFEA85008B353B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B49C76A01DEFF2C0008B353B /* TagCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TagCell.h; sourceTree = "<group>"; };
+		B49C76A11DEFF2C0008B353B /* TagCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TagCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +113,8 @@
 				B49C767B1DEFEA84008B353B /* LaunchScreen.storyboard */,
 				B49C767E1DEFEA84008B353B /* Info.plist */,
 				B49C766D1DEFEA84008B353B /* Supporting Files */,
+				B49C76A01DEFF2C0008B353B /* TagCell.h */,
+				B49C76A11DEFF2C0008B353B /* TagCell.m */,
 			);
 			path = TagViewDemo;
 			sourceTree = "<group>";
@@ -276,6 +281,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B49C76A21DEFF2C0008B353B /* TagCell.m in Sources */,
 				B49C76751DEFEA84008B353B /* ViewController.m in Sources */,
 				B49C76721DEFEA84008B353B /* AppDelegate.m in Sources */,
 				B49C766F1DEFEA84008B353B /* main.m in Sources */,
