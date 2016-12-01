@@ -48,6 +48,16 @@
     return 2;
 }
 
+-(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+    NSInteger items = 1;
+    if (section == 0) {
+        items = [self.selectedList count];
+    }else if (section == 1) {
+        items = [self.unSelectedList count];
+    }
+    return items;
+}
+
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     TagCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"tagCell" forIndexPath:indexPath];
     TagModel *model;
@@ -103,6 +113,33 @@
     
 }
 
+-(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section {
+    if (section == 0) {
+        return CGSizeMake(0, CGFLOAT_MIN);
+    }
+    return CGSizeMake([UIScreen mainScreen].bounds.size.width, 30);
+}
+
+-(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    if (indexPath.section == 0) {
+        //insert回到原来位置
+        TagModel *model = self.selectedList[indexPath.row];
+        NSInteger index = [self getObjectInListIndex:model];
+        
+        [self.unSelectedList insertObject:model atIndex:index];
+        [self.selectedList removeObjectAtIndex:indexPath.row];
+        
+        NSIndexPath *newIndexPath = [NSIndexPath indexPathForItem:index inSection:1];
+        [collectionView moveItemAtIndexPath:indexPath toIndexPath:newIndexPath];
+    }else if (indexPath.section == 1){
+        [self.selectedList addObject:self.unSelectedList[indexPath.row]];
+        [self.unSelectedList removeObjectAtIndex:indexPath.row];
+        
+        NSIndexPath *newIndexPath =[NSIndexPath indexPathForItem:self.selectedList.count-1 inSection:0];
+        [collectionView moveItemAtIndexPath:indexPath toIndexPath:newIndexPath];
+    }
+}
+
 
 #pragma mark- utils
 //查询对象插入到原来合适的位置
@@ -114,6 +151,9 @@
             NSInteger index2 = obj2.index;
             return index1 > index2;
         }];
+        NSInteger index = [self.unSelectedList indexOfObject:m];
+        [self.unSelectedList removeObject:m];
+        return index;
     }
     return [self.unSelectedList count]+1;
 }
