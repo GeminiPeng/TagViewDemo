@@ -16,6 +16,7 @@
 		B49C76881DEFEA85008B353B /* TagViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B49C76871DEFEA85008B353B /* TagViewDemoTests.m */; };
 		B49C76931DEFEA85008B353B /* TagViewDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B49C76921DEFEA85008B353B /* TagViewDemoUITests.m */; };
 		B49C76A21DEFF2C0008B353B /* TagCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B49C76A11DEFF2C0008B353B /* TagCell.m */; };
+		B49C76A51DEFF962008B353B /* TagModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B49C76A41DEFF962008B353B /* TagModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		B49C76941DEFEA85008B353B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B49C76A01DEFF2C0008B353B /* TagCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TagCell.h; sourceTree = "<group>"; };
 		B49C76A11DEFF2C0008B353B /* TagCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TagCell.m; sourceTree = "<group>"; };
+		B49C76A31DEFF962008B353B /* TagModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TagModel.h; sourceTree = "<group>"; };
+		B49C76A41DEFF962008B353B /* TagModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TagModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +111,8 @@
 				B49C76711DEFEA84008B353B /* AppDelegate.m */,
 				B49C76A01DEFF2C0008B353B /* TagCell.h */,
 				B49C76A11DEFF2C0008B353B /* TagCell.m */,
+				B49C76A31DEFF962008B353B /* TagModel.h */,
+				B49C76A41DEFF962008B353B /* TagModel.m */,
 				B49C76731DEFEA84008B353B /* ViewController.h */,
 				B49C76741DEFEA84008B353B /* ViewController.m */,
 				B49C76761DEFEA84008B353B /* Main.storyboard */,
@@ -284,6 +289,7 @@
 				B49C76A21DEFF2C0008B353B /* TagCell.m in Sources */,
 				B49C76751DEFEA84008B353B /* ViewController.m in Sources */,
 				B49C76721DEFEA84008B353B /* AppDelegate.m in Sources */,
+				B49C76A51DEFF962008B353B /* TagModel.m in Sources */,
 				B49C766F1DEFEA84008B353B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
