@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface TagCell : UICollectionViewCell
-
+@property (weak, nonatomic) IBOutlet UIView *bgView;
+@property (weak, nonatomic) IBOutlet UILabel *label;
+-(void)setTitleString:(NSString *)title andColor:(NSString *)color;
 @end

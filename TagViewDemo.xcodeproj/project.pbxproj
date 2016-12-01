@@ -106,6 +106,8 @@
 			children = (
 				B49C76701DEFEA84008B353B /* AppDelegate.h */,
 				B49C76711DEFEA84008B353B /* AppDelegate.m */,
+				B49C76A01DEFF2C0008B353B /* TagCell.h */,
+				B49C76A11DEFF2C0008B353B /* TagCell.m */,
 				B49C76731DEFEA84008B353B /* ViewController.h */,
 				B49C76741DEFEA84008B353B /* ViewController.m */,
 				B49C76761DEFEA84008B353B /* Main.storyboard */,
@@ -113,8 +115,6 @@
 				B49C767B1DEFEA84008B353B /* LaunchScreen.storyboard */,
 				B49C767E1DEFEA84008B353B /* Info.plist */,
 				B49C766D1DEFEA84008B353B /* Supporting Files */,
-				B49C76A01DEFF2C0008B353B /* TagCell.h */,
-				B49C76A11DEFF2C0008B353B /* TagCell.m */,
 			);
 			path = TagViewDemo;
 			sourceTree = "<group>";

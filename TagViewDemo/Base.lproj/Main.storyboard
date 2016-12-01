@@ -31,7 +31,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="tagCell" id="wwj-wz-ctP">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="tagCell" id="wwj-wz-ctP" customClass="TagCell">
                                         <rect key="frame" x="0.0" y="50" width="50" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -60,6 +60,10 @@
                                             <constraint firstItem="D3o-WN-qTs" firstAttribute="top" secondItem="wwj-wz-ctP" secondAttribute="top" id="n9X-hl-bHx"/>
                                             <constraint firstItem="m9l-3v-COG" firstAttribute="top" secondItem="wwj-wz-ctP" secondAttribute="top" id="vGM-8H-4n0"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="bgView" destination="m9l-3v-COG" id="DeQ-35-l2a"/>
+                                            <outlet property="label" destination="D3o-WN-qTs" id="kdC-tQ-bED"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                                 <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="S8L-GA-thE">
